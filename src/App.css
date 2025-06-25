@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c2a1c; /* vert armée foncé */
+  color: #e6f0e6; /* clair pour contraste */
+  font-family: 'Mulish', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: 'Edu QLD Hand', cursive;
+  font-size: 2.5rem;
+  color: #cceacc;
+  margin-bottom: 2vh;
+}
+
+.name {
+  color: #99ffcc;
+}
+
+.tech {
+  color: #88e0b0;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  max-width: 800px;
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.icons a {
+  color: #e6f0e6;
+  font-size: 1.8rem;
+  transition: transform 0.3s;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+  color: #99ffcc;
+}
+.weather {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: #bbffdd;
+  font-size: 0.95rem;
+  font-style: italic;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
